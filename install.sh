@@ -5,6 +5,7 @@
 # Set a root password to allow SSH from laptop for ease of install.
 passwd
 
+# For SSH connection:
 # ip a
 # ssh root@<ip>
 
@@ -31,7 +32,7 @@ mount -o noatime,compress=zstd,subvol=@ /dev/mapper/linuxroot /mnt
 # Mount EFI
 mkdir -p /mnt/efi
 mount /dev/nvme0n1p1 /mnt/efi
-# Create subvolumes as directories (like your working version)
+# Create subvolumes as directories
 btrfs subvolume create /mnt/home
 btrfs subvolume create /mnt/var
 btrfs subvolume create /mnt/var/log
