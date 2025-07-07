@@ -103,6 +103,6 @@ sudo pacman -S linux-zen
 reboot
 # Create recovery key and allow TPM to unlock encrypted drive (note can add a PIN if required)
 sudo systemd-cryptenroll /dev/gpt-auto-root-luks --recovery-key
-sudo systemd-cryptenroll --tpm2-device=auto --tpm2-pcrs=0+7 /dev/gpt-auto-root-luks
+sudo systemd-cryptenroll --tpm2-device=auto --tpm2-with-pin=yes --tpm2-pcrs=0+7 /dev/gpt-auto-root-luks
 reboot
 # Next.. post-install.sh
