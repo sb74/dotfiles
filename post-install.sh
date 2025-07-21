@@ -27,6 +27,9 @@ yay -S --needed --noconfirm \
 # Add: options nvidia_drm modeset=1
 sudo nvim /etc/modprobe.d/nvidia.conf
 
+# Fix sound
+sudo pacman -S sof-firmware alsa-ucm-conf alsa-utils wireplumber pipewire pipewire-alsa pipewire-pulse pipewire-jack
+
 # Install lazyvim
 
 # Install all conf files from dotfiles repo: hyprland, tuigreet, lazyvim
