@@ -12,10 +12,11 @@ yay -S --needed --noconfirm \
   thunar file-roller \
   ghostty \
   starship fish \
-  blueman \
+  blueman bluez bluez-utils \
   wl-clipboard \
   firefox \
-  xdg-desktop-portal-hyprland xdg-desktop-portal-gtk egl-wayland pavucontrol wireplumber \
+  xdg-desktop-portal-hyprland xdg-desktop-portal-gtk egl-wayland \
+  pavucontrol wireplumber pipewire-pulse \
   network-manager-applet \
   neovim fzf btop \
   swww \
